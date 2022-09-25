@@ -4,7 +4,7 @@ import arabic from '../database/arabic.json'
 import french from '../database/french.json'
 import hungarian from '../database/hungarian.json'
 
-export const changeLanguage = (lang)=>{
+const changeLanguage = (lang)=>{
     switch(lang){
         case 'english':
             return english[0]
@@ -18,3 +18,5 @@ export const changeLanguage = (lang)=>{
             return english[0]
     }
 }
+
+export default changeLanguage

@@ -10,6 +10,7 @@ export const Header = (props) => {
   const [open, setopen] = useState(0)
   // FUNCTION
   const setNewLanguage =(value)=>{
+    props.func(value)
     // SET LANGUAGE IN LOCALHOST
     // SET NEW LANGUAGE
     // props.func(value)
@@ -21,8 +22,15 @@ export const Header = (props) => {
     <div className=' bg-white fixed w-screen z-20 flex items-center justify-between px-5 md:px-32 py-5'>
       <div className='flex gap-1 items-center'>
       <Logo/>
-      <p className='text-[#f00] uppercase text-xs font-bold'>beta.</p>
+      {/* <p className='text-[#f00] uppercase text-xs font-bold'>beta.</p> */}
       </div>
+        <ul className='flex gap-4 flex-1 justify-end px-4 font-semibold'>
+          <li>Home</li>
+          <li>Apps</li>
+          <li>Team</li>
+          <li>Donation</li>
+
+        </ul>
       <div className='flex flex-col items-end justify-between'>
         <div onClick={()=>setopen(!open)} className='w-7 h-7  cursor-pointer rounded-full '>
           {setFlag('english')}

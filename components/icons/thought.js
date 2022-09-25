@@ -263,7 +263,6 @@ function Thought() {
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2.646"
-        ariaLabel="1"
         color="#000"
       >
         <path

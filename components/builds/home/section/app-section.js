@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import AppIcon from '../icons/app-icon'
+import AppIcon from '../../../icons/app-icon'
 
 export const AppSection = (props) => {
   return (
